@@ -45,13 +45,13 @@ export function transformSwapRouteToGetQuoteResult({
           tokenIn: {
             chainId: tokenIn.chainId,
             decimals: tokenIn.decimals,
-            address: tokenIn.address,
+            address: (tokenIn as any).address,
             symbol: tokenIn.symbol,
           },
           tokenOut: {
             chainId: tokenOut.chainId,
             decimals: tokenOut.decimals,
-            address: tokenOut.address,
+            address: (tokenOut as any).address,
             symbol: tokenOut.symbol,
           },
           fee: nextPool.fee.toString(),
@@ -90,13 +90,13 @@ export function transformSwapRouteToGetQuoteResult({
           tokenIn: {
             chainId: tokenIn.chainId,
             decimals: tokenIn.decimals,
-            address: tokenIn.address,
+            address: (tokenIn as any).address,
             symbol: tokenIn.symbol,
           },
           tokenOut: {
             chainId: tokenOut.chainId,
             decimals: tokenOut.decimals,
-            address: tokenOut.address,
+            address: (tokenOut as any).address,
             symbol: tokenOut.symbol,
           },
           reserve0: {
